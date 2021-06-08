@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2021_06_08_104614) do
 
+
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 2021_06_08_104614) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
+
 
   create_table "prototypes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
