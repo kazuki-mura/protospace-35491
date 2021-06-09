@@ -12,6 +12,7 @@ class PrototypesController < ApplicationController
     if @prototype.save
       redirect_to root_path
     else
+      @prototypes = @user.prototypes.includes(:user)
       render :new
     end
   end
