@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  
+
   def create
     #  Comment.create(comment_params)
     if comment = Comment.create(comment_params)

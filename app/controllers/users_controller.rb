@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @prototype = Prototype.includes(:user)
+
+    @prototype = @user.prototypes.includes(:user)
   end
 end

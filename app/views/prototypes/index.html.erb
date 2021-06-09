@@ -10,9 +10,9 @@
 
         <div class="card__wrapper">
           <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
-         <% if user_signed_in? %>
+         <%# <% if user_signed_in? %> 
             <%= render partial: 'prototype', collection: @prototypes %>
-          <% end %>
+          <%# <% end %> 
         </div>
       
   </div>
